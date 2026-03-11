@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Gallery | Food Website{% endblock %}
+
+{% block content %}
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="{% static 'images/burger.jpg' %}" alt="Burger" />
+        <p>Burger</p>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'images/pizza.jpg' %}" alt="Pizza" />
+        <p>Pizza</p>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'images/coke.jpg' %}" alt="Coke" />
+        <p>Coke</p>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'images/samosa.jpg' %}" alt="Samosa" />
+        <p>Samosa</p>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'images/shawarma.jpg' %}" alt="Shawarma" />
+        <p>Shawarma</p>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'images/wings.jpg' %}" alt="Wings" />
+        <p>Wings</p>
+    </div>
+</div>
+{% endblock %}

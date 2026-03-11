@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Contact Us{% endblock %}
+{% block content %}
+<section class="contact-section">
+    <div class="form-wrapper">
+        <h2 class="page-heading">Get in Touch</h2>
+        <p>You can contact us via email or phone.</p>
+        <ul class="contact-info">
+            <li><strong>Email:</strong> <a href="mailto:support@myfoodsite.com">support@myfoodsite.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+923211234567">+92-321-1234567</a></li>
+        </ul>
+
+        <form class="contact-form" method="post" action="">
+            {% csrf_token %}
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="menu-container">
+  <h2 class="menu-title">🍽️ Our Menu</h2>
+
+  <div class="menu-category">
+    <h3>🥟 Starters</h3>
+    <ul>
+      <li>
+        <strong>Samosa</strong> - Crispy pastry filled with spiced potatoes.
+        <em class="price">₹50</em> <span class="tag veg">🌱 Veg</span>
+      </li>
+      <li>
+        <strong>Chicken Wings</strong> - Spicy fried chicken wings.
+        <em class="price">₹150</em> <span class="tag non-veg">🔥 Non-Veg</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="menu-category">
+    <h3>🍔 Main Course</h3>
+    <ul>
+      <li>
+        <strong>Burger</strong> - Juicy beef patty with fresh veggies.
+        <em class="price">₹200</em> <span class="tag non-veg">🔥 Non-Veg</span>
+      </li>
+      <li>
+        <strong>Pizza</strong> - Classic Margherita with fresh basil.
+        <em class="price">₹300</em> <span class="tag veg">🌱 Veg</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Add more categories similarly -->
+
+</div>
+{% endblock %}
